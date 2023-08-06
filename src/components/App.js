@@ -23,7 +23,7 @@ const App = () => {
       <div id="shapes-holder">
         {
           shapeHolder.map((shape, index) => (
-            <Shape shape={shape} count={index + 1} />
+            <Shape key={index + 1} shape={shape} count={index + 1} />
           ))
         }
       </div>
